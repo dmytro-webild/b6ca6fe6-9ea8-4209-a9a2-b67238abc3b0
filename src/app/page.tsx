@@ -11,7 +11,6 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
-import { BookOpen, Calendar, Star } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -56,6 +55,7 @@ export default function LandingPage() {
             title="Crafting Flavors with Passion"
             description="Elevating home dining through Michelin-level technique and seasonal, farm-to-table ingredients."
             textboxLayout="split"
+            useInvertedBackground={false}
             bulletPoints={[
               { title: "Fine Dining", description: "Exclusive multi-course menus crafted for your home." },
               { title: "Professional Service", description: "We handle everything from shopping to kitchen cleanup." },
@@ -68,6 +68,7 @@ export default function LandingPage() {
           <FeatureCardTwentyEight
             animationType="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
             title="Bespoke Services"
             description="Tailored culinary solutions to suit your specific occasion and dietary preferences."
             features={[
@@ -82,6 +83,7 @@ export default function LandingPage() {
           <PricingCardEight
             animationType="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
             title="Select Your Experience"
             description="Transparent pricing for exceptional quality."
             plans={[
@@ -95,12 +97,14 @@ export default function LandingPage() {
           <ProductCardThree
             animationType="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
             gridVariant="three-columns-all-equal-width"
             title="Sample Menu Highlights"
             description="A glimpse into our seasonal, fresh-sourced offerings."
             products={[
               { id: "p1", name: "Seared Scallops", price: "$45", imageSrc: "http://img.b2bpic.net/free-photo/plate-with-cutlery-well-decorated-with-napkin-tied-with-golden-bow_1220-609.jpg" },
               { id: "p2", name: "Lamb Rack", price: "$65", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-professional-chefs-working-together_23-2151232213.jpg" },
+              { id: "p3", name: "Beef Fillet", price: "$75", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-professional-chefs-working-together_23-2151232213.jpg" },
             ]}
           />
         </div>
@@ -121,8 +125,11 @@ export default function LandingPage() {
 
         <div id="contact" data-section="contact">
           <ContactSplit
+            tag="Contact"
             title="Book Your Chef"
             description="Ready to plan your next event? Fill out the details below and let's get started."
+            useInvertedBackground={false}
+            background={{ variant: "gradient-bars" }}
             inputPlaceholder="Enter your email"
             buttonText="Get Started"
             imageSrc="http://img.b2bpic.net/free-photo/medium-shot-smiley-man-kitchen_23-2149631673.jpg"
