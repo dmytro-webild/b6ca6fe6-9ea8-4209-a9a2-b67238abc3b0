@@ -58,7 +58,7 @@ export default function LandingPage() {
           href: "#contact",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/chef-showing-his-fine-cuisine-professional-food-decoration_482257-10348.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/chef-showing-his-fine-cuisine-professional-food-decoration_482257-10348.jpg?_wi=1"
       imageAlt="Professional private chef at work"
       mediaAnimation="slide-up"
       avatars={[
@@ -144,7 +144,7 @@ export default function LandingPage() {
           description: "Hands-on culinary guidance for individuals or small groups.",
           bentoComponent: "reveal-icon",
           icon: BookOpen,
-          imageSrc: "http://img.b2bpic.net/free-photo/chef-showing-his-fine-cuisine-professional-food-decoration_482257-10348.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/chef-showing-his-fine-cuisine-professional-food-decoration_482257-10348.jpg?_wi=2",
           imageAlt: "atmosphere in the kitchen of the cafe Process",
         },
         {
